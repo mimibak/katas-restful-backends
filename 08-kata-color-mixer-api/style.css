@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-color: rgb(220, 218, 133);
+  --bg-color: rgb(71, 101, 84);
+  --red-slider: red;
+  --blue-slider: blue;
+  --green-slider: green;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+header {
+  background-color: var(--header-color);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+#hexacode {
+  margin-left: auto;
+}
+
+#red {
+  accent-color: var(--red-slider);
+}
+
+#blue {
+  accent-color: var(--blue-slider);
+}
+
+#green {
+  accent-color: var(--green-slider);
+}
