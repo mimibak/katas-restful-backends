@@ -23,7 +23,7 @@ function bgColor() {
   valueHex(redSlide, blueSlide, greenSlide);
 }
 
-head.addEventListener("click", bgColor);
+/*head.addEventListener("click", bgColor);*/
 
 function valueHex(r, g, b) {
   r = Number(r).toString(16);
@@ -48,7 +48,10 @@ randomBtn.addEventListener("click", () => {
         [rndClr.rgbRed, rndClr.rgbBlue, rndClr.rgbGreen].join(",") +
         ")";
 
-      hexaCode.innerText =
-        "#" + rndClr.rgbRed + rndClr.rgbBlue + rndClr.rgbGreen;
+      hexaCode.innerText = rndClr.color;
+
+      rValue.value = rndClr.rgbRed;
+      gValue.value = rndClr.rgbGreen;
+      bValue.value = rndClr.rgbBlue;
     });
 });
